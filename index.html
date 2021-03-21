@@ -20,7 +20,7 @@
 </head>
 
 <body>
-  <section class="heading">
+  <div class="heading">
     <img src="images/image-hero-desktop.jpg" alt="hero picture of website" class="heading__overlay">
     <img src="images/image-hero-mobile.jpg" alt="hero picture of website" class="heading__overlay_mbl">
     <nav class="navbar flex-between">
@@ -32,7 +32,7 @@
         <a href="#" class="navbar__link">Get Started</a>
       </div>
     </nav>
-  </section>
+  </div>
   <main>
     <div class="main_holder">
       <section class="first border-blocks">
@@ -79,7 +79,8 @@
                       <div class="flex modal__form">
                         <div class="modal__form_holder">
                           <span>$</span>
-                          <input type="text" placeholder="0" disabled>
+                          <input id="pledge-1" type="text" placeholder="0" disabled name="pledges">
+                          <label for="pledge-1"></label>
                         </div>
                         <input class="main-button" type="submit" value="Continue" data-toggle="modal-support">
                       </div>
@@ -115,7 +116,8 @@
                       <div class="flex modal__form">
                         <div class="modal__form_holder">
                           <span>$</span>
-                          <input type="text" value="25">
+                          <input id="pledge-2" type="text" value="25" name="pledges">
+                          <label for="pledge-2"></label>
                         </div>
                         <input class="main-button" type="submit" value="Continue" data-toggle="modal-support">
                       </div>
@@ -151,7 +153,8 @@
                       <div class="flex modal__form">
                         <div class="modal__form_holder">
                           <span>$</span>
-                          <input type="text" value="75">
+                          <input id="pledge-3" type="text" value="75" name="pledges">
+                          <label for="pledge-3"></label>
                         </div>
                         <input class="main-button" type="submit" value="Continue" data-toggle="modal-support">
                       </div>
