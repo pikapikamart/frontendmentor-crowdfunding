@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-Live Site URL: [Live site of the challenge hosted here](https://pikapikamart.github.io/frontendmentor-blogr/)
+Live Site URL: [Live site of the challenge hosted here](https://pikapikamart.github.io/frontendmentor-crowdfunding/)
 
 ## My process
 
