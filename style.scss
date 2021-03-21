@@ -52,7 +52,7 @@ a {
 
 .out .out-block {
     background-color: rgba(122, 122, 122, 0.3);
-    cursor: initial;
+    pointer-events: none;
 }
 
 .d-show {
