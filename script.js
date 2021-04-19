@@ -59,3 +59,5 @@ successTriggers.forEach(trigger => {
 closeSuccessModal.addEventListener("click", () =>{
     successModal.classList.toggle("show");
 })
+
+form.addEventListener("submit", event => event.preventDefault());
