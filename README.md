@@ -27,8 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop-view](Finished/desktop-preview.png)
-![Mobile-view](Finished/mobile-preview.png)
+![Desktop-view](finished/desktop-preview.png)
 
 ### Links
 
@@ -36,13 +35,14 @@ Live Site URL: [Live site of the challenge hosted here](https://pikapikamart.git
 
 ## My process
 
-This second challenge was pretty fun since I don't almost build accordion likes object and I made just using css with no js, but other part with js. This part of my everyday 1 frontend mentor project, but, I will be pausing for now since freelance work is calling me. But I will resume and continue making 1 everyday project
+This second challenge was pretty fun since I don't almost build accordion likes object and I made just using css with no js, but other part with js. This part of my everyday 1 frontend mentor project, but, I will be pausing for now since freelance work is calling me. But I will resume and continue making 1 everyday project. (This is the refactored version. This is more accessible compared to the former version) .
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
+- Grid
 - Javascript 
 - Sass preprocessor
 

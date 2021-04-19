@@ -1,49 +1,61 @@
-const navToggle = document.querySelector(".nav-toggle");
-const navTarget = document.querySelector(".nav-target");
+const navbarToggle = document.querySelector("#navbarToggle");
+const burger = document.querySelector("#navbarToggle img");
+const navModal = document.querySelector("header nav");
+const bookmark = document.querySelector("#bookmark");
+const body = document.querySelector("body");
+const form = document.querySelector("form");
+const modal = document.querySelector(".modal");
+const closeForm = document.querySelector("[data-toggle=close-form]");
+const successModal = document.querySelector(".success");
+const closeSuccessModal = document.querySelector("[data-toggle=close-success]");
+const modalTriggers = document.querySelectorAll("[data-toggle=modal-triger]");
+const successTriggers = document.querySelectorAll("[data-toggle=success-modal]");
 
-navToggle.addEventListener("click", () => {
-    if (navToggle.classList.contains("change")) {
-        navToggle.setAttribute("src", "images/icon-hamburger.svg")
+
+navbarToggle.addEventListener("click", () =>{
+    if (burger.getAttribute("src") == "images/icon-hamburger.svg"){
+        burger.setAttribute("src", "images/icon-close-menu.svg");
     } else {
-        navToggle.setAttribute("src", "images/icon-close-menu.svg")
+        burger.setAttribute("src", "images/icon-hamburger.svg");
     }
-    navToggle.classList.toggle("change");
-    navTarget.classList.toggle("nav-target");
-});
-
-
-const bookMark = document.querySelector("#bookmark");
-const bookToggle = document.querySelector("#bookmark-toggle");
-const bookmarkTriggers = document.querySelectorAll("[data-toggle=bookmark]");
-
-bookmarkTriggers.forEach(bookmark => {
-    bookmark.addEventListener("click", () => {
-        if (bookToggle.textContent == "Bookmark") {
-            bookToggle.textContent = "Bookmarked";
-        } else {
-            bookToggle.textContent = "Bookmark";
-        }
-
-
-    });
+    navModal.classList.toggle("showNav");
+    body.classList.toggle("no-scroll");
 })
 
 
-const supportTriggers = document.querySelectorAll("[data-toggle=modal-support]");
-const supportModal = document.querySelector(".support");
+bookmark.addEventListener("click", ()=>{
+    const span = document.querySelector("#bookmark span");
 
-supportTriggers.forEach(item => {
-    item.addEventListener("click", () => {
-        supportModal.classList.toggle("d-show");
-    });
+    bookmark.classList.toggle("pop");
+    if (span.textContent == "Bookmark") {
+        span.textContent = "Bookmarked";
+    } else {
+        span.textContent = "Bookmark";
+    }
+})
+
+modalTriggers.forEach(trigger =>{
+    trigger.addEventListener("click", ()=>{
+        modal.classList.toggle("show");
+        body.classList.toggle("no-scroll");
+    })
 })
 
 
-const pledgeModalTriggers = document.querySelectorAll("[data-toggle=modal-pledge]");
-const pledgeModal = document.querySelector(".modal");
+closeForm.addEventListener("click", ()=>{
+    modal.classList.toggle("show");
+    body.classList.toggle("no-scroll");
+})
 
-pledgeModalTriggers.forEach(pledge => {
-    pledge.addEventListener("click", () => {
-        pledgeModal.classList.toggle("d-show");
-    });
+
+successTriggers.forEach(trigger => {
+    trigger.addEventListener("click", ()=> {
+        successModal.classList.toggle("show");
+        body.classList.add("no-scroll");
+    })
+})
+
+
+closeSuccessModal.addEventListener("click", () =>{
+    successModal.classList.toggle("show");
 })
